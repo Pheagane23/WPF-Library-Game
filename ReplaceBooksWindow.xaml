@@ -1,0 +1,39 @@
+﻿<Window x:Class="Library_User_Trainer.ReplaceBooksWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_User_Trainer"
+        mc:Ignorable="d"
+        Title="ReplaceBooksWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/App Entrance.jpeg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="324" Margin="512,128,0,0" VerticalAlignment="Top" Width="278" Source="/knight.png" Grid.ColumnSpan="2"/>
+        <Label x:Name="ReplaceBooksExplainationLbl" Content="Welcome Visitor! My name is Askeladd, I am here to explain the rules&#xD;&#xA;of the Replacing Books game before you begin....&#xD;&#xA;I will present 10 different call numbers to you and you must order&#xD;&#xA;them in ascending in 60 seconds!!!!&#xD;&#xA;&#xD;&#xA;BE SURE TO ALWYS BE AWARE OF THE TIMER AND THE ORDER OF&#xD;&#xA;THE CALL NUMBERS&#xD;&#xA;I wish you goof fortunes, visitor." HorizontalAlignment="Left" Margin="121,21,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="428" Height="218" Foreground="#FFF5F1F1" FontStyle="Italic" FontFamily="Sitka Display" FontSize="20" FontWeight="Bold">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.8"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="StartBtn" Content="Start " HorizontalAlignment="Left" Margin="285,325,0,0" VerticalAlignment="Top" Width="227" Height="68" FontStyle="Italic" FontSize="24" FontFamily="Stencil" Click="StartBtn_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFF9F5F5" Offset="0"/>
+                    <GradientStop Color="#FFD6D2D2" Offset="0.393"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
